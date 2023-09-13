@@ -1,0 +1,8 @@
+workflow:
+  steps:
+    - branch_package:
+        source_project: home:luc14n0:GNOME:CI
+        source_package: glib2
+        target_project: home:luc14n0:GNOME:CI:Builds
+  filters:
+    event: tag_push
